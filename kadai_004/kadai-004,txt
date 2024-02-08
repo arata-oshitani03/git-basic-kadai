@@ -1,0 +1,29 @@
+PS C:\Users\arata> # 作成したgit_challengeディレクトリに移動する
+PS C:\Users\arata>  cd git_challenge
+PS C:\Users\arata\git_challenge> # カレントディレクトリにローカルリポジトリを新規作成する
+PS C:\Users\arata\git_challenge>   git init
+Initialized empty Git repository in C:/Users/arata/git_challenge/.git/
+PS C:\Users\arata\git_challenge> git add hello_woeld.txt
+fatal: pathspec 'hello_woeld.txt' did not match any files
+PS C:\Users\arata\git_challenge>  git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello_world.txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\arata\git_challenge> git add hello_world.txt.txt
+PS C:\Users\arata\git_challenge> git commit -m "hello_world.txt.txtを追加"
+[main (root-commit) c7957b7] hello_world.txt.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt.txt
+PS C:\Users\arata\git_challenge>  git add hello_world.txt.txt
+PS C:\Users\arata\git_challenge>  git commit -m "日本語訳を追記"
+[main 49c3393] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+PS C:\Users\arata\git_challenge> git log --oneline
+49c3393 (HEAD -> main) 日本語訳を追記
+c7957b7 hello_world.txt.txtを追加
